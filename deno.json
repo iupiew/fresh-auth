@@ -1,0 +1,37 @@
+{
+  "lock": false,
+  "tasks": {
+    "start": "deno run -A --watch=static/,routes/ dev.ts",
+    "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
+    "build": "deno run -A dev.ts build",
+    "preview": "deno run -A main.ts"
+  },
+  "lint": {
+    "rules": {
+      "tags": ["fresh", "recommended"]
+    }
+  },
+  "exclude": ["**/_fresh/*"],
+  "imports": {
+    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
+    "preact": "https://esm.sh/preact@10.22.0",
+    "preact/": "https://esm.sh/preact@10.22.0/",
+    "preact-render-to-string": "https://esm.sh/preact-render-to-string@6.2.0",
+    "@preact/signals": "https://esm.sh/@preact/signals@1.2.2",
+    "@preact/signals-core": "https://esm.sh/@preact/signals-core@1.5.1",
+    "twind": "https://esm.sh/twind@0.16.17",
+    "twind/": "https://esm.sh/twind@0.16.17/",
+    "redis": "https://deno.land/x/redis@v0.29.4/mod.ts",
+    "$std/": "https://deno.land/std@0.216.0/",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.0",
+    "components/": "./components/",
+    "islands/": "./islands/",
+    "lib/": "./lib/",
+    "routes/": "./routes/"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "nodeModulesDir": "auto"
+}
