@@ -1,2 +1,8 @@
+.cache/
+.deno/
+dist/
+_fresh/
+
 .env
+node_modules/
 
