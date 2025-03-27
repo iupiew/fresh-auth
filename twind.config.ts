@@ -7,9 +7,9 @@ export default {
     colors,
     extend: {
       colors: {
-        primary: "#121212",
-        primaryStrong: "#6e6a86",
-        primaryLight: "#9893a5",
+        primary: "#26233a",        // Brave dark background
+        primaryStrong: "#393552",  // Brave accent green
+        primaryLight: "#f2e9e1",   // Brave light text
       },
     },
   },

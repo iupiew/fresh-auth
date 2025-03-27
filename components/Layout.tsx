@@ -22,8 +22,6 @@ export function Layout(props: Props) {
           }
         `}</style>
       </Head>
-
-      {/* Original structure with background fixes */}
       <div class="bg-primary min-h-screen">
         <nav class="flex items-center justify-between flex-wrap min-h-[80px] max-w-screen-md mx-auto p-4 bg-primary">
           <a href="/">
@@ -48,7 +46,7 @@ export function Layout(props: Props) {
                 <form method="post" action="/api/sign-out">
                   <button
                     type="submit"
-                    class="inline-block cursor-pointer font-bold text-white px-4 py-2 rounded-xl border(gray-500 2) hover:bg-gray-200 disabled:(opacity-50 cursor-not-allowed)"
+                    class="inline-block cursor-pointer font-bold text-white px-4 py-2 rounded-xl border-2 hover:bg-primaryLight hover:text-primaryStrong disabled:(opacity-50 cursor-not-allowed)"
                   >
                     Sign Out
                   </button>
